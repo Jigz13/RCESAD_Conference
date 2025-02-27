@@ -1,52 +1,40 @@
-
-const registrationFees = [
-  {
-    category: "Student (UG/PG)",
-    fees: "300 Rs.",
-    color: "bg-blue-50 border-blue-100",
-  },
-  {
-    category: "PhD Scholars/ Academia",
-    fees: "500 Rs.",
-    color: "bg-purple-50 border-purple-100",
-  },
-  {
-    category: "Academic or Research Professional (IITs/NITs)",
-    fees: "700 Rs.",
-    color: "bg-green-50 border-green-100",
-  },
-  {
-    category: "Industry Person",
-    fees: "900 Rs.",
-    color: "bg-amber-50 border-amber-100",
-  },
-  {
-    category: "Industry Group (>3)",
-    fees: "1100 Rs.",
-    color: "bg-red-50 border-red-100",
-  },
-  {
-    category: "International Scholars",
-    fees: "15$",
-    color: "bg-emerald-50 border-emerald-100",
-  },
-  {
-    category: "Attendee",
-    fees: "300 Rs.",
-    color: "bg-indigo-50 border-indigo-100",
-  },
-];
-
+const registrationFees = [{
+  category: "Student (UG/PG)",
+  fees: "300 Rs.",
+  color: "bg-blue-50 border-blue-100"
+}, {
+  category: "PhD Scholars/ Academia",
+  fees: "500 Rs.",
+  color: "bg-purple-50 border-purple-100"
+}, {
+  category: "Academic or Research Professional (IITs/NITs)",
+  fees: "700 Rs.",
+  color: "bg-green-50 border-green-100"
+}, {
+  category: "Industry Person",
+  fees: "900 Rs.",
+  color: "bg-amber-50 border-amber-100"
+}, {
+  category: "Industry Group (>3)",
+  fees: "1100 Rs.",
+  color: "bg-red-50 border-red-100"
+}, {
+  category: "International Scholars",
+  fees: "15$",
+  color: "bg-emerald-50 border-emerald-100"
+}, {
+  category: "Attendee",
+  fees: "300 Rs.",
+  color: "bg-indigo-50 border-indigo-100"
+}];
 const bankDetails = {
   accountName: "CHAMELI DEVI SCHOOL OF ENGINEERING",
   bankName: "HDFC BANK",
   accountNo: "12401450000161",
-  ifscCode: "HDFC0001240",
+  ifscCode: "HDFC0001240"
 };
-
 const Registration = () => {
-  return (
-    <section id="registration" className="py-16 md:py-24 bg-white">
+  return <section id="registration" className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold text-conference-blue mb-4">
@@ -68,20 +56,17 @@ const Registration = () => {
                 <div>Registration Fees</div>
               </div>
               <div className="divide-y">
-                {registrationFees.map((item, index) => (
-                  <div 
-                    key={index} 
-                    className={`grid grid-cols-2 text-sm p-4 ${item.color}`}
-                  >
+                {registrationFees.map((item, index) => <div key={index} className={`grid grid-cols-2 text-sm p-4 ${item.color}`}>
                     <div className="font-medium">{item.category}</div>
                     <div>{item.fees}</div>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
           </div>
 
-          <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <div className="animate-fade-in" style={{
+          animationDelay: "0.2s"
+        }}>
             <h3 className="text-xl font-bold text-conference-blue mb-6">Bank Details</h3>
             <div className="bg-gray-50 rounded-xl p-6 border">
               <div className="space-y-4">
@@ -108,11 +93,7 @@ const Registration = () => {
                   For registration, fill the form using the given QR Code below
                 </p>
                 <div className="flex justify-center mt-4">
-                  <img 
-                    src="/lovable-uploads/7b46ef30-273c-477c-9f67-a5cf0f6a05f3.png" 
-                    alt="Registration QR Code" 
-                    className="w-32 h-32 object-contain border-4 border-white rounded-lg shadow-md" 
-                  />
+                  <img alt="Registration QR Code" src="/lovable-uploads/6f499eae-ccb0-45f4-b340-5a29eb6b58f1.png" className="w-32 h-32 border-4 border-white rounded-lg shadow-md object-cover" />
                 </div>
               </div>
             </div>
@@ -125,8 +106,6 @@ const Registration = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Registration;
