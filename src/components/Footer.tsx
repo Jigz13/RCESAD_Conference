@@ -102,6 +102,10 @@ const Footer = () => {
                 </button>
                 {copied === "secondary-phone" && <span className="text-xs text-green-400 ml-1">Copied!</span>}
               </li>
+              <li className="flex items-center group">
+                <Globe className="w-4 h-4 mr-2 flex-shrink-0" />
+                <a href="https://cdgi.edu.in/cdgi.php" className="text-gray-300 hover:text-white flex-1">https://cdgi.edu.in/cdgi.php</a>
+              </li>
             </ul>
             <div className="mt-6 flex space-x-4">
               
