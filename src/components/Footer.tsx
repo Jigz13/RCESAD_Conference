@@ -1,8 +1,20 @@
 
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Copy } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Footer = () => {
+  const [copied, setCopied] = useState<string | null>(null);
+
+  const copyToClipboard = (text: string, type: string) => {
+    navigator.clipboard.writeText(text).then(() => {
+      setCopied(type);
+      setTimeout(() => {
+        setCopied(null);
+      }, 2000);
+    });
+  };
+
   return (
     <footer className="bg-conference-blue text-white">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
@@ -61,21 +73,45 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-4">Contact Information</h3>
             <ul className="space-y-3 text-sm">
-              <li className="flex items-start">
+              <li className="flex items-start group">
                 <MapPin className="w-4 h-4 mt-1 mr-2 flex-shrink-0" />
-                <span className="text-gray-300">
+                <span className="text-gray-300 flex-1">
                   Chameli Devi Group of Institutions, Indore, Madhya Pradesh, India
                 </span>
+                <button 
+                  className="text-gray-400 hover:text-white ml-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                  onClick={() => copyToClipboard("Chameli Devi Group of Institutions, Indore, Madhya Pradesh, India", "address")}
+                  title="Copy address"
+                >
+                  <Copy className="w-4 h-4" />
+                </button>
+                {copied === "address" && <span className="text-xs text-green-400 ml-1">Copied!</span>}
               </li>
-              <li className="flex items-center">
+              <li className="flex items-center group">
                 <Mail className="w-4 h-4 mr-2 flex-shrink-0" />
-                <a href="mailto:info@cdgi.edu.in" className="text-gray-300 hover:text-white">
+                <a href="mailto:info@cdgi.edu.in" className="text-gray-300 hover:text-white flex-1">
                   info@cdgi.edu.in
                 </a>
+                <button 
+                  className="text-gray-400 hover:text-white ml-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                  onClick={() => copyToClipboard("info@cdgi.edu.in", "email")}
+                  title="Copy email"
+                >
+                  <Copy className="w-4 h-4" />
+                </button>
+                {copied === "email" && <span className="text-xs text-green-400 ml-1">Copied!</span>}
               </li>
-              <li className="flex items-center">
+              <li className="flex items-center group">
                 <Phone className="w-4 h-4 mr-2 flex-shrink-0" />
-                <span className="text-gray-300">+91 XXXX-XXXXXX</span>
+                <span className="text-gray-300 flex-1">+91 XXXX-XXXXXX</span>
+                <button 
+                  className="text-gray-400 hover:text-white ml-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                  onClick={() => copyToClipboard("+91 XXXX-XXXXXX", "phone")}
+                  title="Copy phone number"
+                >
+                  <Copy className="w-4 h-4" />
+                </button>
+                {copied === "phone" && <span className="text-xs text-green-400 ml-1">Copied!</span>}
               </li>
             </ul>
             <div className="mt-6 flex space-x-4">
