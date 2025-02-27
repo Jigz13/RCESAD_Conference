@@ -1,4 +1,3 @@
-
 import { Mail, Phone, MapPin, Copy } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -81,9 +80,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center group">
                 <Mail className="w-4 h-4 mr-2 flex-shrink-0" />
-                <a href="mailto:info@cdgi.edu.in" className="text-gray-300 hover:text-white flex-1">
-                  info@cdgi.edu.in
-                </a>
+                <a href="mailto:info@cdgi.edu.in" className="text-gray-300 hover:text-white flex-1">rcesad@cdgi.edu.in</a>
                 <button className="text-gray-400 hover:text-white ml-2 opacity-0 group-hover:opacity-100 transition-opacity" onClick={() => copyToClipboard("info@cdgi.edu.in", "email")} title="Copy email">
                   <Copy className="w-4 h-4" />
                 </button>
