@@ -1,11 +1,8 @@
-
 import { Mail, Phone, MapPin, Copy } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-
 const Footer = () => {
   const [copied, setCopied] = useState<string | null>(null);
-
   const copyToClipboard = (text: string, type: string) => {
     navigator.clipboard.writeText(text).then(() => {
       setCopied(type);
@@ -14,9 +11,7 @@ const Footer = () => {
       }, 2000);
     });
   };
-
-  return (
-    <footer className="bg-conference-blue text-white">
+  return <footer className="bg-conference-blue text-white">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
@@ -78,11 +73,7 @@ const Footer = () => {
                 <span className="text-gray-300 flex-1">
                   Chameli Devi Group of Institutions, Indore, Madhya Pradesh, India
                 </span>
-                <button 
-                  className="text-gray-400 hover:text-white ml-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                  onClick={() => copyToClipboard("Chameli Devi Group of Institutions, Indore, Madhya Pradesh, India", "address")}
-                  title="Copy address"
-                >
+                <button className="text-gray-400 hover:text-white ml-2 opacity-0 group-hover:opacity-100 transition-opacity" onClick={() => copyToClipboard("Chameli Devi Group of Institutions, Indore, Madhya Pradesh, India", "address")} title="Copy address">
                   <Copy className="w-4 h-4" />
                 </button>
                 {copied === "address" && <span className="text-xs text-green-400 ml-1">Copied!</span>}
@@ -92,34 +83,22 @@ const Footer = () => {
                 <a href="mailto:info@cdgi.edu.in" className="text-gray-300 hover:text-white flex-1">
                   info@cdgi.edu.in
                 </a>
-                <button 
-                  className="text-gray-400 hover:text-white ml-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                  onClick={() => copyToClipboard("info@cdgi.edu.in", "email")}
-                  title="Copy email"
-                >
+                <button className="text-gray-400 hover:text-white ml-2 opacity-0 group-hover:opacity-100 transition-opacity" onClick={() => copyToClipboard("info@cdgi.edu.in", "email")} title="Copy email">
                   <Copy className="w-4 h-4" />
                 </button>
                 {copied === "email" && <span className="text-xs text-green-400 ml-1">Copied!</span>}
               </li>
               <li className="flex items-center group">
                 <Phone className="w-4 h-4 mr-2 flex-shrink-0" />
-                <span className="text-gray-300 flex-1">+91 XXXX-XXXXXX</span>
-                <button 
-                  className="text-gray-400 hover:text-white ml-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                  onClick={() => copyToClipboard("+91 XXXX-XXXXXX", "phone")}
-                  title="Copy phone number"
-                >
+                <span className="text-gray-300 flex-1">+91 95844 47171</span>
+                <button className="text-gray-400 hover:text-white ml-2 opacity-0 group-hover:opacity-100 transition-opacity" onClick={() => copyToClipboard("+91 XXXX-XXXXXX", "phone")} title="Copy phone number">
                   <Copy className="w-4 h-4" />
                 </button>
                 {copied === "phone" && <span className="text-xs text-green-400 ml-1">Copied!</span>}
               </li>
             </ul>
             <div className="mt-6 flex space-x-4">
-              <img 
-                src="/lovable-uploads/e671f055-5b9d-4f8a-9cfe-e7ffced6794f.png" 
-                alt="IEEE logo" 
-                className="h-10 bg-white p-1 rounded" 
-              />
+              
             </div>
           </div>
         </div>
@@ -130,8 +109,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
