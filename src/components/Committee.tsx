@@ -108,7 +108,7 @@ const committeeData = {
       affiliation: "CDGI, Indore",
     },
     {
-      name: "Prof. Deepak R. Phaike",
+      name: "Prof. Deepak R. Phalke",
       affiliation: "CDGI, Indore",
     },
     {
