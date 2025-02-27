@@ -1,3 +1,4 @@
+
 import { Mail, Phone, MapPin, Copy } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -90,11 +91,21 @@ const Footer = () => {
               </li>
               <li className="flex items-center group">
                 <Phone className="w-4 h-4 mr-2 flex-shrink-0" />
-                <span className="text-gray-300 flex-1">+91 95844 47171</span>
-                <button className="text-gray-400 hover:text-white ml-2 opacity-0 group-hover:opacity-100 transition-opacity" onClick={() => copyToClipboard("+91 XXXX-XXXXXX", "phone")} title="Copy phone number">
+                <span className="text-gray-300 flex-1">+91 95844 47171</span>
+                <button className="text-gray-400 hover:text-white ml-2 opacity-0 group-hover:opacity-100 transition-opacity" onClick={() => copyToClipboard("+91 95844 47171", "phone")} title="Copy phone number">
                   <Copy className="w-4 h-4" />
                 </button>
                 {copied === "phone" && <span className="text-xs text-green-400 ml-1">Copied!</span>}
+              </li>
+              <li className="flex items-center group">
+                <Mail className="w-4 h-4 mr-2 flex-shrink-0" />
+                <a href="mailto:conference.rcesad@cdgi.edu.in" className="text-gray-300 hover:text-white flex-1">
+                  conference.rcesad@cdgi.edu.in
+                </a>
+                <button className="text-gray-400 hover:text-white ml-2 opacity-0 group-hover:opacity-100 transition-opacity" onClick={() => copyToClipboard("conference.rcesad@cdgi.edu.in", "secondary-email")} title="Copy email">
+                  <Copy className="w-4 h-4" />
+                </button>
+                {copied === "secondary-email" && <span className="text-xs text-green-400 ml-1">Copied!</span>}
               </li>
             </ul>
             <div className="mt-6 flex space-x-4">
