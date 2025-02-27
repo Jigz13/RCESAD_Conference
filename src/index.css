@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 210 100% 22%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -97,5 +98,34 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium;
+  }
+  
+  .section-title {
+    @apply text-2xl md:text-3xl font-bold text-conference-blue mb-6 relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-12 h-1 bg-conference-gold mt-2;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  .conference-btn {
+    @apply px-4 py-2 rounded-md font-medium transition-all duration-300 inline-flex items-center;
+  }
+  
+  .conference-btn-primary {
+    @apply conference-btn bg-conference-blue text-white hover:bg-conference-lightBlue;
+  }
+  
+  .conference-btn-outlined {
+    @apply conference-btn border-2 border-conference-blue text-conference-blue hover:bg-conference-blue hover:text-white;
   }
 }

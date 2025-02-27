@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -24,6 +25,13 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				conference: {
+					blue: "#003b71",
+					lightBlue: "#0056a4",
+					gold: "#d4af37",
+					cream: "#f5f5f0",
+					gray: "#6b7280",
+				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -84,11 +92,46 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				"fade-in": {
+					"0%": {
+						opacity: "0",
+						transform: "translateY(10px)"
+					},
+					"100%": {
+						opacity: "1",
+						transform: "translateY(0)"
+					}
+				},
+				"slide-in": {
+					"0%": {
+						opacity: "0",
+						transform: "translateX(-20px)"
+					},
+					"100%": {
+						opacity: "1",
+						transform: "translateX(0)"
+					}
+				},
+				"hero-glow": {
+					"0%": {
+						boxShadow: "0 0 5px rgba(0, 59, 113, 0.1)"
+					},
+					"50%": {
+						boxShadow: "0 0 20px rgba(0, 59, 113, 0.2)"
+					},
+					"100%": {
+						boxShadow: "0 0 5px rgba(0, 59, 113, 0.1)"
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				"fade-in": "fade-in 0.7s ease-out",
+				"fade-in-slow": "fade-in 1.2s ease-out",
+				"slide-in": "slide-in 0.7s ease-out",
+				"hero-glow": "hero-glow 4s infinite"
 			}
 		}
 	},
