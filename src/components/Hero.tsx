@@ -78,6 +78,8 @@ const Hero = () => {
                   alt="IEEE logo" 
                   className="h-8 object-contain"
                 />
+                <span className="font-medium text-gray-800">&</span>
+                <span className="font-bold text-conference-blue">ISTE</span>
               </div>
             </div>
           </div>
