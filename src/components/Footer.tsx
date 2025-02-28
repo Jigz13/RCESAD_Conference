@@ -1,3 +1,4 @@
+
 import { Mail, Phone, MapPin, Copy } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -80,8 +81,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center group">
                 <Mail className="w-4 h-4 mr-2 flex-shrink-0" />
-                <a href="mailto:info@cdgi.edu.in" className="text-gray-300 hover:text-white flex-1">rcesad@cdgi.edu.in</a>
-                <button className="text-gray-400 hover:text-white ml-2 opacity-0 group-hover:opacity-100 transition-opacity" onClick={() => copyToClipboard("info@cdgi.edu.in", "email")} title="Copy email">
+                <a href="mailto:rcesad@cdgi.edu.in" className="text-gray-300 hover:text-white flex-1">rcesad@cdgi.edu.in</a>
+                <button className="text-gray-400 hover:text-white ml-2 opacity-0 group-hover:opacity-100 transition-opacity" onClick={() => copyToClipboard("rcesad@cdgi.edu.in", "email")} title="Copy email">
                   <Copy className="w-4 h-4" />
                 </button>
                 {copied === "email" && <span className="text-xs text-green-400 ml-1">Copied!</span>}
@@ -103,8 +104,20 @@ const Footer = () => {
                 {copied === "secondary-phone" && <span className="text-xs text-green-400 ml-1">Copied!</span>}
               </li>
             </ul>
-            <div className="mt-6 flex space-x-4">
-              
+            <div className="mt-6 flex flex-col space-y-4">
+              <p className="text-white text-sm font-semibold mb-2">In Association With:</p>
+              <div className="flex flex-wrap items-center gap-4">
+                <div className="bg-white rounded-lg p-2 flex flex-col items-center shadow-lg">
+                  <img src="/lovable-uploads/e671f055-5b9d-4f8a-9cfe-e7ffced6794f.png" alt="IEEE MP Section" className="h-10 object-contain" />
+                  <span className="text-conference-blue text-xs font-bold mt-1">IEEE MP Section</span>
+                </div>
+                <div className="bg-white rounded-lg p-2 flex flex-col items-center shadow-lg">
+                  <span className="text-conference-blue text-xs font-medium">ISTE</span>
+                </div>
+                <div className="bg-white rounded-lg p-2 flex flex-col items-center shadow-lg">
+                  <span className="text-conference-blue text-xs font-medium">International Community for Global Sustainability</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
