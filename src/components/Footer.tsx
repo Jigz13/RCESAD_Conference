@@ -1,7 +1,8 @@
 
-import { Mail, Phone, MapPin, Copy } from "lucide-react";
+import { Mail, Phone, MapPin, Copy, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+
 const Footer = () => {
   const [copied, setCopied] = useState<string | null>(null);
   const copyToClipboard = (text: string, type: string) => {
@@ -103,6 +104,16 @@ const Footer = () => {
                 </button>
                 {copied === "secondary-phone" && <span className="text-xs text-green-400 ml-1">Copied!</span>}
               </li>
+              <li className="flex items-center group">
+                <Globe className="w-4 h-4 mr-2 flex-shrink-0" />
+                <a href="https://cdgi.edu.in/cdgi.php" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white flex-1">
+                  cdgi.edu.in
+                </a>
+                <button className="text-gray-400 hover:text-white ml-2 opacity-0 group-hover:opacity-100 transition-opacity" onClick={() => copyToClipboard("https://cdgi.edu.in/cdgi.php", "website")} title="Copy website">
+                  <Copy className="w-4 h-4" />
+                </button>
+                {copied === "website" && <span className="text-xs text-green-400 ml-1">Copied!</span>}
+              </li>
             </ul>
           </div>
         </div>
@@ -115,4 +126,5 @@ const Footer = () => {
       </div>
     </footer>;
 };
+
 export default Footer;

@@ -60,16 +60,16 @@ const Registration = () => {
             <h3 className="text-xl font-bold text-conference-blue mb-6">Registration Fees</h3>
             <div className="bg-gray-50 rounded-xl overflow-hidden">
               <div className="grid grid-cols-3 text-sm font-semibold text-gray-700 bg-gray-100 p-4 border-b">
-                <div className="col-span-1">Category</div>
-                <div className="col-span-1">Regular Fees</div>
-                <div className="col-span-1">Late Fees</div>
+                <div className="col-span-1 px-4">Category</div>
+                <div className="col-span-1 px-4 text-center">Regular Fees</div>
+                <div className="col-span-1 px-4 text-center">Late Fees</div>
               </div>
               <div className="divide-y">
                 {registrationFees.map((item, index) => (
                   <div key={index} className={`grid grid-cols-3 text-sm p-4 ${item.color}`}>
-                    <div className="font-medium col-span-1">{item.category}</div>
-                    <div className="col-span-1">{item.fees}</div>
-                    <div className="col-span-1">{item.lateFees}</div>
+                    <div className="font-medium col-span-1 px-4">{item.category}</div>
+                    <div className="col-span-1 px-4 text-center">{item.fees}</div>
+                    <div className="col-span-1 px-4 text-center">{item.lateFees}</div>
                   </div>
                 ))}
               </div>

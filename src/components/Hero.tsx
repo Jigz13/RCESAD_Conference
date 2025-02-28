@@ -62,16 +62,23 @@ const Hero = () => {
             
             <div className="mt-4 border-t border-gray-200 pt-4">
               <div className="text-conference-blue font-bold mb-3">In Association With:</div>
-              <div className="flex flex-wrap items-center gap-4">
-                <div className="bg-white rounded-lg p-2 flex flex-col items-center shadow-md">
-                  <img src="/lovable-uploads/e671f055-5b9d-4f8a-9cfe-e7ffced6794f.png" alt="IEEE MP Section" className="h-10 object-contain" />
-                  <span className="text-conference-blue text-xs font-bold mt-1">IEEE MP Section</span>
+              <div className="flex flex-wrap items-center gap-6">
+                {/* IEEE Logo - Highlighted */}
+                <div className="bg-white rounded-lg p-3 flex flex-col items-center shadow-md border-2 border-conference-blue/20 hover:shadow-lg transition-shadow">
+                  <img src="/lovable-uploads/b9fecb39-066a-49c3-9c48-ab541febfad9.png" alt="IEEE MP Section" className="h-12 object-contain" />
+                  <span className="text-conference-blue text-xs font-bold mt-2">IEEE MP Section</span>
                 </div>
-                <div className="bg-white rounded-lg p-2 flex flex-col items-center shadow-md">
-                  <span className="text-conference-blue text-sm font-medium">ISTE</span>
+                
+                {/* ISTE Logo */}
+                <div className="bg-white rounded-lg p-3 flex flex-col items-center shadow-md hover:shadow-lg transition-shadow">
+                  <img src="/lovable-uploads/8a8af421-cdd9-48d4-bda6-5f0fbd5d8da8.png" alt="ISTE" className="h-12 object-contain" />
+                  <span className="text-conference-blue text-xs font-bold mt-2">ISTE</span>
                 </div>
-                <div className="bg-white rounded-lg p-2 flex flex-col items-center shadow-md">
-                  <span className="text-conference-blue text-xs font-medium">International Community for Global Sustainability</span>
+                
+                {/* International Community Logo */}
+                <div className="bg-white rounded-lg p-3 flex flex-col items-center shadow-md hover:shadow-lg transition-shadow">
+                  <img src="/lovable-uploads/d22570e5-6338-4da1-8133-b8820f75305a.png" alt="International Community for Global Sustainability" className="h-12 object-contain" />
+                  <span className="text-conference-blue text-xs font-bold mt-2">International Community for Global Sustainability</span>
                 </div>
               </div>
             </div>
@@ -80,7 +87,7 @@ const Hero = () => {
           <div className="relative animate-fade-in-slow">
             <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-2xl animate-hero-glow">
               <img 
-                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800&q=80" 
+                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800&q=80" 
                 alt="Engineering conference presentation" 
                 className="object-cover"
               />
