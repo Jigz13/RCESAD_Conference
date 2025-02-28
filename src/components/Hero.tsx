@@ -93,7 +93,7 @@ const Hero = () => {
             <div className="absolute -bottom-6 -right-6 md:-bottom-10 md:-right-10 bg-white rounded-lg shadow-lg p-4 md:p-5">
               <div className="flex items-center space-x-3">
                 <img 
-                  src="/lovable-uploads/e671f055-5b9d-4f8a-9cfe-e7ffced6794f.png" 
+                  src="/lovable-uploads/cdgi-logo.jpeg" 
                   alt="CDGI Logo" 
                   className="w-10 h-10 object-contain"
                 />
