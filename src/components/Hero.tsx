@@ -95,7 +95,7 @@ const Hero = () => {
                 <img 
                   src="/lovable-uploads/cdgi-logo.jpeg" 
                   alt="CDGI Logo" 
-                  className="w-10 h-10 object-contain"
+                  className="w-13 h-13 object-contain"
                 />
                 <div>
                   <div className="text-conference-blue font-bold text-sm">Organized By</div>
