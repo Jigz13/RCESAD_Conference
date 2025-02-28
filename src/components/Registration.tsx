@@ -119,10 +119,11 @@ const Registration = () => {
                 </div>
               </div>
 
-            <div className="mt-8 text-center">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfyJMXqdJhMlhUGdFhjhFVqtN22hbIPOpvMutifb2bGkCuNtA/viewform" target="_blank" rel="noopener noreferrer" className="conference-btn-primary">
-                Register Now
-              </a>
+              <div className="mt-8 text-center">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfyJMXqdJhMlhUGdFhjhFVqtN22hbIPOpvMutifb2bGkCuNtA/viewform" target="_blank" rel="noopener noreferrer" className="conference-btn-primary">
+                  Register Now
+                </a>
+              </div>
             </div>
           </div>
         </div>
