@@ -62,23 +62,20 @@ const Hero = () => {
             
             <div className="mt-4 border-t border-gray-200 pt-4">
               <div className="text-conference-blue font-bold mb-3">In Association With:</div>
-              <div className="flex flex-wrap items-center gap-6">
+              <div className="flex flex-wrap items-center gap-8">
                 {/* IEEE Logo - Highlighted */}
-                <div className="bg-white rounded-lg p-3 flex flex-col items-center shadow-md border-2 border-conference-blue/20 hover:shadow-lg transition-shadow">
-                  <img src="/lovable-uploads/b9fecb39-066a-49c3-9c48-ab541febfad9.png" alt="IEEE MP Section" className="h-12 object-contain" />
-                  <span className="text-conference-blue text-xs font-bold mt-2">IEEE MP Section</span>
+                <div className="bg-white rounded-lg p-4 flex items-center shadow-md border-2 border-conference-blue/20 hover:shadow-lg transition-shadow">
+                  <img src="/lovable-uploads/b9fecb39-066a-49c3-9c48-ab541febfad9.png" alt="IEEE MP Section" className="h-14 object-contain" />
                 </div>
                 
                 {/* ISTE Logo */}
-                <div className="bg-white rounded-lg p-3 flex flex-col items-center shadow-md hover:shadow-lg transition-shadow">
-                  <img src="/lovable-uploads/8a8af421-cdd9-48d4-bda6-5f0fbd5d8da8.png" alt="ISTE" className="h-12 object-contain" />
-                  <span className="text-conference-blue text-xs font-bold mt-2">ISTE</span>
+                <div className="bg-white rounded-lg p-4 flex items-center shadow-md hover:shadow-lg transition-shadow">
+                  <img src="/lovable-uploads/8a8af421-cdd9-48d4-bda6-5f0fbd5d8da8.png" alt="ISTE" className="h-14 object-contain" />
                 </div>
                 
                 {/* International Community Logo */}
-                <div className="bg-white rounded-lg p-3 flex flex-col items-center shadow-md hover:shadow-lg transition-shadow">
-                  <img src="/lovable-uploads/d22570e5-6338-4da1-8133-b8820f75305a.png" alt="International Community for Global Sustainability" className="h-12 object-contain" />
-                  <span className="text-conference-blue text-xs font-bold mt-2">International Community for Global Sustainability</span>
+                <div className="bg-white rounded-lg p-4 flex items-center shadow-md hover:shadow-lg transition-shadow">
+                  <img src="/lovable-uploads/d22570e5-6338-4da1-8133-b8820f75305a.png" alt="International Community for Global Sustainability" className="h-14 object-contain" />
                 </div>
               </div>
             </div>
@@ -93,10 +90,17 @@ const Hero = () => {
               />
             </div>
             
-            <div className="absolute -bottom-6 -right-6 md:-bottom-10 md:-right-10 bg-white rounded-lg shadow-lg p-4 w-48 md:w-64">
-              <div className="text-conference-blue font-bold mb-1">Organized By</div>
-              <div className="flex items-center justify-center">
-                <span className="font-medium text-gray-800">CDGI, Indore</span>
+            <div className="absolute -bottom-6 -right-6 md:-bottom-10 md:-right-10 bg-white rounded-lg shadow-lg p-4 md:p-5">
+              <div className="flex items-center space-x-3">
+                <img 
+                  src="/lovable-uploads/e671f055-5b9d-4f8a-9cfe-e7ffced6794f.png" 
+                  alt="CDGI Logo" 
+                  className="w-10 h-10 object-contain"
+                />
+                <div>
+                  <div className="text-conference-blue font-bold text-sm">Organized By</div>
+                  <div className="font-medium text-gray-800 text-sm">CDGI, Indore</div>
+                </div>
               </div>
             </div>
           </div>
