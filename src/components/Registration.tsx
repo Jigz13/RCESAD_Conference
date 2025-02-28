@@ -3,51 +3,41 @@ const registrationFees = [{
   category: "Student (UG/PG)",
   fees: "300 Rs.",
   lateFees: "500 Rs.",
-  onSpotFees: "600 Rs.",
   color: "bg-blue-50 border-blue-100"
 }, {
-  category: "PhD Scholars/ Academia",
+  category: "PhD Scholars/ Post Doc",
   fees: "500 Rs.",
   lateFees: "700 Rs.",
-  onSpotFees: "800 Rs.",
   color: "bg-purple-50 border-purple-100"
 }, {
-  category: "Academic or Research Professional (IITs/NITs)",
+  category: "Academic or Research Professional",
   fees: "700 Rs.",
   lateFees: "900 Rs.",
-  onSpotFees: "1000 Rs.",
   color: "bg-green-50 border-green-100"
 }, {
-  category: "Industry Person",
+  category: "Industry Personal",
   fees: "900 Rs.",
   lateFees: "1100 Rs.",
-  onSpotFees: "1200 Rs.",
   color: "bg-amber-50 border-amber-100"
-}, {
-  category: "Industry Group (>3)",
-  fees: "1100 Rs.",
-  lateFees: "1300 Rs.",
-  onSpotFees: "1400 Rs.",
-  color: "bg-red-50 border-red-100"
 }, {
   category: "International Scholars",
   fees: "15$",
-  lateFees: "20$",
-  onSpotFees: "25$",
+  lateFees: "17$",
   color: "bg-emerald-50 border-emerald-100"
 }, {
-  category: "Attendee",
+  category: "Attendees",
   fees: "300 Rs.",
-  lateFees: "500 Rs.",
-  onSpotFees: "600 Rs.",
+  lateFees: "",
   color: "bg-indigo-50 border-indigo-100"
 }];
+
 const bankDetails = {
   accountName: "CHAMELI DEVI SCHOOL OF ENGINEERING",
   bankName: "HDFC BANK",
   accountNo: "12401450000161",
   ifscCode: "HDFC0001240"
 };
+
 const Registration = () => {
   return <section id="registration" className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
@@ -69,19 +59,19 @@ const Registration = () => {
           <div className="animate-fade-in">
             <h3 className="text-xl font-bold text-conference-blue mb-6">Registration Fees</h3>
             <div className="bg-gray-50 rounded-xl overflow-hidden">
-              <div className="grid grid-cols-4 text-sm font-semibold text-gray-700 bg-gray-100 p-4 border-b">
-                <div>Category</div>
-                <div>Regular Fees</div>
-                <div>Late Fees</div>
-                <div>On-Spot Fees</div>
+              <div className="grid grid-cols-3 text-sm font-semibold text-gray-700 bg-gray-100 p-4 border-b">
+                <div className="col-span-1">Category</div>
+                <div className="col-span-1">Regular Fees</div>
+                <div className="col-span-1">Late Fees</div>
               </div>
               <div className="divide-y">
-                {registrationFees.map((item, index) => <div key={index} className={`grid grid-cols-4 text-sm p-4 ${item.color}`}>
-                    <div className="font-medium">{item.category}</div>
-                    <div>{item.fees}</div>
-                    <div>{item.lateFees}</div>
-                    <div>{item.onSpotFees}</div>
-                  </div>)}
+                {registrationFees.map((item, index) => (
+                  <div key={index} className={`grid grid-cols-3 text-sm p-4 ${item.color}`}>
+                    <div className="font-medium col-span-1">{item.category}</div>
+                    <div className="col-span-1">{item.fees}</div>
+                    <div className="col-span-1">{item.lateFees}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -130,4 +120,5 @@ const Registration = () => {
       </div>
     </section>;
 };
+
 export default Registration;

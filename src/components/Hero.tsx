@@ -59,6 +59,22 @@ const Hero = () => {
                 <span className="text-sm font-medium">Proceedings with ISBN</span>
               </div>
             </div>
+            
+            <div className="mt-4 border-t border-gray-200 pt-4">
+              <div className="text-conference-blue font-bold mb-3">In Association With:</div>
+              <div className="flex flex-wrap items-center gap-4">
+                <div className="bg-white rounded-lg p-2 flex flex-col items-center shadow-md">
+                  <img src="/lovable-uploads/e671f055-5b9d-4f8a-9cfe-e7ffced6794f.png" alt="IEEE MP Section" className="h-10 object-contain" />
+                  <span className="text-conference-blue text-xs font-bold mt-1">IEEE MP Section</span>
+                </div>
+                <div className="bg-white rounded-lg p-2 flex flex-col items-center shadow-md">
+                  <span className="text-conference-blue text-sm font-medium">ISTE</span>
+                </div>
+                <div className="bg-white rounded-lg p-2 flex flex-col items-center shadow-md">
+                  <span className="text-conference-blue text-xs font-medium">International Community for Global Sustainability</span>
+                </div>
+              </div>
+            </div>
           </div>
           
           <div className="relative animate-fade-in-slow">
@@ -71,15 +87,9 @@ const Hero = () => {
             </div>
             
             <div className="absolute -bottom-6 -right-6 md:-bottom-10 md:-right-10 bg-white rounded-lg shadow-lg p-4 w-48 md:w-64">
-              <div className="text-conference-blue font-bold mb-1">In Association With</div>
-              <div className="flex items-center justify-center space-x-4">
-                <img 
-                  src="/lovable-uploads/e671f055-5b9d-4f8a-9cfe-e7ffced6794f.png" 
-                  alt="IEEE logo" 
-                  className="h-8 object-contain"
-                />
-                <span className="font-medium text-gray-800">&</span>
-                <span className="font-bold text-conference-blue">ISTE</span>
+              <div className="text-conference-blue font-bold mb-1">Organized By</div>
+              <div className="flex items-center justify-center">
+                <span className="font-medium text-gray-800">CDGI, Indore</span>
               </div>
             </div>
           </div>
