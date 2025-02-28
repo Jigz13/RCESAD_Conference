@@ -64,18 +64,18 @@ const Hero = () => {
               <div className="text-conference-blue font-bold mb-3">In Association With:</div>
               <div className="flex flex-wrap items-center gap-8">
                 {/* IEEE Logo - Highlighted */}
-                <div className="bg-white rounded-lg p-4 flex items-center shadow-md border-2 border-conference-blue/20 hover:shadow-lg transition-shadow">
-                  <img src="/lovable-uploads/b9fecb39-066a-49c3-9c48-ab541febfad9.png" alt="IEEE MP Section" className="h-14 object-contain" />
+                <div className="bg-white rounded-lg p-2 flex items-center shadow-md border-2 border-conference-blue/20 hover:shadow-lg transition-shadow">
+                  <img src="/lovable-uploads/b9fecb39-066a-49c3-9c48-ab541febfad9.png" alt="IEEE MP Section" className="h-16 object-contain" />
                 </div>
                 
                 {/* ISTE Logo */}
-                <div className="bg-white rounded-lg p-4 flex items-center shadow-md hover:shadow-lg transition-shadow">
-                  <img src="/lovable-uploads/8a8af421-cdd9-48d4-bda6-5f0fbd5d8da8.png" alt="ISTE" className="h-14 object-contain" />
+                <div className="bg-white rounded-lg p-2 flex items-center shadow-md hover:shadow-lg transition-shadow">
+                  <img src="/lovable-uploads/8a8af421-cdd9-48d4-bda6-5f0fbd5d8da8.png" alt="ISTE" className="h-16 object-contain" />
                 </div>
                 
                 {/* International Community Logo */}
-                <div className="bg-white rounded-lg p-4 flex items-center shadow-md hover:shadow-lg transition-shadow">
-                  <img src="/lovable-uploads/d22570e5-6338-4da1-8133-b8820f75305a.png" alt="International Community for Global Sustainability" className="h-14 object-contain" />
+                <div className="bg-white rounded-lg p-2 flex items-center shadow-md hover:shadow-lg transition-shadow">
+                  <img src="/lovable-uploads/d22570e5-6338-4da1-8133-b8820f75305a.png" alt="International Community for Global Sustainability" className="h-18 w-36 object-contain" />
                 </div>
               </div>
             </div>
