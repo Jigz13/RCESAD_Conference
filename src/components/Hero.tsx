@@ -1,4 +1,3 @@
-
 import { CalendarDays, MapPin, Users, GraduationCap } from "lucide-react";
 
 const Hero = () => {
@@ -62,20 +61,22 @@ const Hero = () => {
             
             <div className="mt-4 border-t border-gray-200 pt-4">
               <div className="text-conference-blue font-bold mb-3">In Association With:</div>
-              <div className="flex flex-wrap items-center gap-8">
-                {/* IEEE Logo - Highlighted */}
-                <div className="bg-white rounded-lg p-4 flex items-center shadow-md border-2 border-conference-blue/20 hover:shadow-lg transition-shadow">
-                  <img src="/lovable-uploads/b9fecb39-066a-49c3-9c48-ab541febfad9.png" alt="IEEE MP Section" className="h-14 object-contain" />
+              
+              {/* Highlighted IEEE Logo on top */}
+              <div className="mb-4">
+                <div className="bg-white rounded-lg p-3 inline-flex items-center shadow-md border-2 border-conference-blue/30 hover:shadow-lg transition-shadow">
+                  <img src="/lovable-uploads/b9fecb39-066a-49c3-9c48-ab541febfad9.png" alt="IEEE MP Section" className="h-16 object-contain" />
                 </div>
-                
-                {/* ISTE Logo */}
-                <div className="bg-white rounded-lg p-4 flex items-center shadow-md hover:shadow-lg transition-shadow">
+              </div>
+              
+              {/* Other two logos below */}
+              <div className="flex flex-wrap items-center gap-6">
+                <div className="bg-white rounded-lg p-3 inline-flex items-center shadow-md hover:shadow-lg transition-shadow">
                   <img src="/lovable-uploads/8a8af421-cdd9-48d4-bda6-5f0fbd5d8da8.png" alt="ISTE" className="h-14 object-contain" />
                 </div>
                 
-                {/* International Community Logo */}
-                <div className="bg-white rounded-lg p-4 flex items-center shadow-md hover:shadow-lg transition-shadow">
-                  <img src="/lovable-uploads/d22570e5-6338-4da1-8133-b8820f75305a.png" alt="International Community for Global Sustainability" className="h-14 object-contain" />
+                <div className="bg-white rounded-lg p-3 inline-flex items-center shadow-md hover:shadow-lg transition-shadow">
+                  <img src="/lovable-uploads/d22570e5-6338-4da1-8133-b8820f75305a.png" alt="International Community" className="h-14 object-contain" />
                 </div>
               </div>
             </div>
