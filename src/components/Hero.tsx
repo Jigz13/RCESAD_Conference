@@ -62,15 +62,15 @@ const Hero = () => {
             <div className="mt-4 border-t border-gray-200 pt-4">
               <div className="text-conference-blue font-bold mb-3">In Association With:</div>
               
-              {/* Highlighted IEEE Logo on top - made wider */}
-              <div className="mb-4 flex justify-center">
+              {/* IEEE Logo - left aligned and wider */}
+              <div className="mb-4">
                 <div className="bg-white rounded-lg p-3 inline-flex items-center shadow-md border-2 border-conference-blue/30 hover:shadow-lg transition-shadow">
                   <img src="/lovable-uploads/b9fecb39-066a-49c3-9c48-ab541febfad9.png" alt="IEEE MP Section" className="h-16 w-56 object-contain" />
                 </div>
               </div>
               
-              {/* Other two logos below - aligned directly under IEEE logo */}
-              <div className="flex justify-center space-x-6">
+              {/* Other two logos below - aligned under IEEE logo */}
+              <div className="flex space-x-6">
                 <div className="bg-white rounded-lg p-3 inline-flex items-center shadow-md hover:shadow-lg transition-shadow">
                   <img src="/lovable-uploads/8a8af421-cdd9-48d4-bda6-5f0fbd5d8da8.png" alt="ISTE" className="h-14 w-24 object-contain" />
                 </div>
@@ -90,8 +90,10 @@ const Hero = () => {
                 Download the abstract template for your submissions:
               </p>
               <a 
-                href="#" 
+                href="https://docs.google.com/document/d/19-pQGmLobwGXYpoOwT0dnbXS4_6nT_X0/edit?usp=sharing&ouid=102320521960462274726&rtpof=true&sd=true" 
                 className="inline-flex items-center space-x-2 px-4 py-2 bg-white border border-conference-blue/30 rounded-md text-conference-blue hover:bg-conference-blue/5 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FileText className="w-4 h-4" />
                 <span>Download Template</span>
