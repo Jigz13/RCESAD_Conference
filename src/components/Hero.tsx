@@ -1,10 +1,11 @@
+
 import { CalendarDays, MapPin, Users, GraduationCap, FileText } from "lucide-react";
 
 const Hero = () => {
   return (
     <section 
       id="home" 
-      className="relative pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-b from-white to-gray-50"
+      className="relative pt-20 pb-12 md:pt-28 md:pb-20 bg-gradient-to-b from-white to-gray-50"
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -104,8 +105,8 @@ const Hero = () => {
           <div className="relative animate-fade-in-slow">
             <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-2xl animate-hero-glow">
               <img 
-                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800&q=80" 
-                alt="Engineering conference presentation" 
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800&q=80" 
+                alt="Engineering conference collaboration" 
                 className="object-cover"
               />
             </div>
