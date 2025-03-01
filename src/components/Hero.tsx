@@ -1,4 +1,4 @@
-import { CalendarDays, MapPin, Users, GraduationCap } from "lucide-react";
+import { CalendarDays, MapPin, Users, GraduationCap, FileText } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -62,23 +62,41 @@ const Hero = () => {
             <div className="mt-4 border-t border-gray-200 pt-4">
               <div className="text-conference-blue font-bold mb-3">In Association With:</div>
               
-              {/* Highlighted IEEE Logo on top */}
+              {/* Highlighted IEEE Logo on top - made wider */}
               <div className="mb-4">
                 <div className="bg-white rounded-lg p-3 inline-flex items-center shadow-md border-2 border-conference-blue/30 hover:shadow-lg transition-shadow">
-                  <img src="/lovable-uploads/b9fecb39-066a-49c3-9c48-ab541febfad9.png" alt="IEEE MP Section" className="h-16 object-contain" />
+                  <img src="/lovable-uploads/b9fecb39-066a-49c3-9c48-ab541febfad9.png" alt="IEEE MP Section" className="h-16 w-48 object-contain" />
                 </div>
               </div>
               
-              {/* Other two logos below */}
-              <div className="flex flex-wrap items-center gap-6">
+              {/* Other two logos below - better aligned */}
+              <div className="flex justify-center space-x-8">
                 <div className="bg-white rounded-lg p-3 inline-flex items-center shadow-md hover:shadow-lg transition-shadow">
-                  <img src="/lovable-uploads/8a8af421-cdd9-48d4-bda6-5f0fbd5d8da8.png" alt="ISTE" className="h-14 object-contain" />
+                  <img src="/lovable-uploads/8a8af421-cdd9-48d4-bda6-5f0fbd5d8da8.png" alt="ISTE" className="h-14 w-24 object-contain" />
                 </div>
                 
                 <div className="bg-white rounded-lg p-3 inline-flex items-center shadow-md hover:shadow-lg transition-shadow">
-                  <img src="/lovable-uploads/d22570e5-6338-4da1-8133-b8820f75305a.png" alt="International Community" className="h-14 object-contain" />
+                  <img src="/lovable-uploads/d22570e5-6338-4da1-8133-b8820f75305a.png" alt="International Community" className="h-14 w-24 object-contain" />
                 </div>
               </div>
+            </div>
+            
+            {/* Abstract Template Section */}
+            <div className="mt-4 pt-4 border-t border-gray-200">
+              <div className="flex items-center space-x-2 mb-2">
+                <FileText className="w-5 h-5 text-conference-blue" />
+                <span className="text-conference-blue font-bold">Abstract Template</span>
+              </div>
+              <p className="text-sm text-gray-600 mb-3">
+                Download the abstract template for your submissions:
+              </p>
+              <a 
+                href="#" 
+                className="inline-flex items-center space-x-2 px-4 py-2 bg-white border border-conference-blue/30 rounded-md text-conference-blue hover:bg-conference-blue/5 transition-colors"
+              >
+                <FileText className="w-4 h-4" />
+                <span>Download Template</span>
+              </a>
             </div>
           </div>
           
