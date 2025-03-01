@@ -63,14 +63,14 @@ const Hero = () => {
               <div className="text-conference-blue font-bold mb-3">In Association With:</div>
               
               {/* Highlighted IEEE Logo on top - made wider */}
-              <div className="mb-4">
+              <div className="mb-4 flex justify-center">
                 <div className="bg-white rounded-lg p-3 inline-flex items-center shadow-md border-2 border-conference-blue/30 hover:shadow-lg transition-shadow">
-                  <img src="/lovable-uploads/b9fecb39-066a-49c3-9c48-ab541febfad9.png" alt="IEEE MP Section" className="h-16 w-48 object-contain" />
+                  <img src="/lovable-uploads/b9fecb39-066a-49c3-9c48-ab541febfad9.png" alt="IEEE MP Section" className="h-16 w-56 object-contain" />
                 </div>
               </div>
               
-              {/* Other two logos below - better aligned */}
-              <div className="flex justify-center space-x-8">
+              {/* Other two logos below - aligned directly under IEEE logo */}
+              <div className="flex justify-center space-x-6">
                 <div className="bg-white rounded-lg p-3 inline-flex items-center shadow-md hover:shadow-lg transition-shadow">
                   <img src="/lovable-uploads/8a8af421-cdd9-48d4-bda6-5f0fbd5d8da8.png" alt="ISTE" className="h-14 w-24 object-contain" />
                 </div>
@@ -81,7 +81,6 @@ const Hero = () => {
               </div>
             </div>
             
-            {/* Abstract Template Section */}
             <div className="mt-4 pt-4 border-t border-gray-200">
               <div className="flex items-center space-x-2 mb-2">
                 <FileText className="w-5 h-5 text-conference-blue" />
